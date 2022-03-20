@@ -13,6 +13,7 @@ import { MembersService } from 'src/app/_services/members.service';
   styleUrls: ['./member-edit.component.css']
 })
 export class MemberEditComponent implements OnInit {
+  birthday = new Date(1988, 3, 15); 
   @ViewChild('editForm') editForm: NgForm;
   member: Member;
   user: User;
